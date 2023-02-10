@@ -1,7 +1,7 @@
-package = "lua-resty-openidc"
+package = "lua-resty-openidc-fixeddependency"
 version = "1.7.6-3"
 source = {
-    url = "git+https://github.com/zmartzone/lua-resty-openidc",
+    url = "git+https://github.com/Federnetes-com/lua-resty-openidc-nxt.git",
     tag = "v1.7.6",
     dir = "lua-resty-openidc"
 }
@@ -18,13 +18,13 @@ description = {
 
         It can be used as a reverse proxy terminating OAuth/OpenID Connect in front of an origin server so that the origin server/services can be protected with the relevant standards without implementing those on the server itself.
     ]],
-    homepage = "https://github.com/zmartzone/lua-resty-openidc",
+    homepage = "https://github.com/Federnetes-com/lua-resty-openidc-nxt.git",
     license = "Apache 2.0"
 }
 dependencies = {
     "lua >= 5.1",
     "lua-resty-http >= 0.08",
-    "lua-resty-session >= 2.8, <= 3.10",
+    "lua-resty-session = 3.10",
     "lua-resty-jwt >= 0.2.0"
 }
 build = {
